@@ -11,7 +11,7 @@ fue util?:soluciono el erro de las cards en la que solo se hizo una card para to
 para utilizar un color segun la clasificacion.
 que modificaste?:
 -------------------------------------
-prompt:
+prompt:en #file:Filtroclasificacion.jsx realiza un filtro con botones o selector para filtrar por la clasificacion de edad("todos",+14,+18) y debe tener un buscador para poner los nombres de las peliculas donde si no encuentra lanza un no coincide y limite el texto al nombre de la pelicula mas larga.
 fue util?.
 que modificaste?:
 ----------------------------------------
