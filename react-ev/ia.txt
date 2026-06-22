@@ -1,0 +1,21 @@
+prompt:realizar card con colores segun clasificacion
+fue util?:fue util pero no crea el codigo dentro del archivo que solicite
+que modificaste?:peliculacards
+----------------------------------
+prompt:renderizar las cards de peliculas
+fue util?:fue util pero hubo un error con un import.
+que modificaste?: las cards de las peliculas y app.jsx para renderizarlas
+---------------------------------
+prompt: modificar las cards para que sea una por cada pelicula.
+fue util?:soluciono el erro de las cards en la que solo se hizo una card para todas las peliculas y se creo una carpeta de estilos 
+para utilizar un color segun la clasificacion.
+que modificaste?:
+-------------------------------------
+prompt:
+fue util?.
+que modificaste?:
+----------------------------------------
+prompt:
+fue util?.
+que modificaste?:
+----------------------------------------

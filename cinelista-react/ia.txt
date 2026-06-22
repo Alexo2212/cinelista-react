@@ -1,4 +1,0 @@
-prompt:
-fue util?:
-que modificaste?:
-----------------------------------

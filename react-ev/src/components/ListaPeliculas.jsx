@@ -1,4 +1,39 @@
-export const peliculas = [
+import PeliculaCard from './PeliculaCard';
+import PropTypes from 'prop-types';
+
+const ListaPeliculas = ({ peliculas }) => {
+  return (
+    <div className="lista-peliculas">
+      {peliculas.map((pelicula) => (
+        <PeliculaCard
+          key={pelicula.id}
+          titulo={pelicula.titulo}
+          genero={pelicula.genero}
+          duracion={pelicula.duracion}
+          clasificacion={pelicula.clasificacion}
+          sinopsis={pelicula.sinopsis}
+        />
+      ))}
+    </div>
+  );
+};
+
+ListaPeliculas.propTypes = {
+  peliculas: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      titulo: PropTypes.string.isRequired,
+      genero: PropTypes.string.isRequired,
+      duracion: PropTypes.number.isRequired,
+      clasificacion: PropTypes.string.isRequired,
+      sinopsis: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
+export default ListaPeliculas;
+
+export const peliculasData = [
     { id: 1,  titulo: "El Viaje de la Montaña",   genero: "Aventura",   duracion: 118, clasificacion: "TE",  sinopsis: "Una familia emprende una travesía inesperada por los Andes.",          horarios: ["15:30", "18:00", "21:15"], funcionHoy: true },
     { id: 2,  titulo: "Códigos del Silencio",     genero: "Suspenso",   duracion: 132, clasificacion: "+14", sinopsis: "Una analista descubre un mensaje oculto en una transmisión antigua.",   horarios: ["20:00", "22:30"],          funcionHoy: false },
     { id: 3,  titulo: "Pequeños Inventores",      genero: "Animación",  duracion: 95,  clasificacion: "TE",  sinopsis: "Tres niños construyen una máquina para salvar su barrio.",             horarios: ["11:00", "13:00", "16:00"], funcionHoy: true },
